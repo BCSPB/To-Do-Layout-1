@@ -114,14 +114,17 @@ body {
   margin-top: 10px;
 }
 
-.priority-select {
+/* Select Styling for Both Priority and Category */
+.priority-select,
+.category-select {
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
   width: 100%;
 }
 
-.priority-select option {
+.priority-select option,
+.category-select option {
   background-color: #f0f0f0;
   color: #333;
   padding: 8px;
@@ -130,7 +133,8 @@ body {
   transition: background-color 0.2s;
 }
 
-.priority-select option:hover {
+.priority-select option:hover,
+.category-select option:hover {
   background-color: #d1d1d1;
 }
 
