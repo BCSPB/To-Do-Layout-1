@@ -1,0 +1,42 @@
+// Define randomQuotes array
+const randomQuotes = [
+  "Keep on keeping on.",
+  "You got this!",
+  "Small steps will lead you where you need to go",
+  "The wheel of fate is turning. Task One.... Focus!",
+  "It is what it is, but it will be what you make it.",
+  "You are Smart......You are Smart........",
+  "Didn't do it yesterday? Do it today!",
+  "Consistency is key",
+  "No better time than the present",
+  "This is the story of your life. You are the author.",
+  "Life is a highway, and you're driving the car",
+  "Rizz for the Taskmaster",
+  "The best way to scare a Tyrant is to read and get rich!",
+  "Tomorrow comes Today....",
+  "Is a hambuger just a flat hot dog???",
+  "And you have my List, and my Pen, and my Focus!",
+  "You know whats cool, being productive",
+  "Focus is the art of knowing what to ignore",
+  "The secret of getting ahead is getting started",
+  "You found a Secret YaHaHa",
+  "Productivity is never an accident.",
+  "Ima makaname foMaSelf today Bois",
+  "Hello Person, Welcome to your Focus.",
+  "Starve the distractions, feed your focus.",
+  "You reached a checkpoint, keep going!",
+  "Stay Focused on your goals!",
+  "All out of quotes...Enter a task next time ;)",
+];
+
+// Get a random quote
+function getRandomQuote() {
+  const indexOfQuotes = Math.floor(Math.random() * randomQuotes.length);
+  return randomQuotes[indexOfQuotes];
+}
+
+//set the random quote
+function setRandomQuote() {
+  const todaysQuote = getRandomQuote();
+  document.querySelector(".quote-text").innerText = todaysQuote;
+}
